@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Elytra | Smart EV Charging Solutions</title>
+    <meta name="description" content="Elytra delivers reliable DC fast charging solutions for commercial spaces, highways, parking zones, and public charging networks.">
+    <!-- Favicon & Brand Symbol -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" type="image/webp" href="assets/elytralogo.webp">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Cormorant Garamond: editorial display serif (free, Google Fonts) -->
+    <!-- DM Sans: geometric, clean body sans (free, Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" id="mainHeader">
+        <div class="container">
+            <a href="#home" class="logo" aria-label="Elytra Home">
+                <img src="assets/elytralogo.webp" alt="Elytra Logo" class="logo-img">
+            </a>
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks" role="list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-primary nav-cta" aria-label="Get a Quote">Get a Quote</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ultra-Luxury Standalone Mobile Navigation Drawer -->
+    <div class="mobile-drawer-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu" aria-hidden="true">
+        <div class="mobile-drawer-header">
+            <a href="#home" class="logo mobile-drawer-logo" aria-label="Elytra Home">
+                <img src="assets/elytralogo.webp" alt="Elytra Logo" class="logo-img">
+            </a>
+            <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close navigation menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-drawer-body">
+            <span class="mobile-drawer-overline">Elytra Ecosystem</span>
+            <nav class="mobile-drawer-nav" aria-label="Mobile navigation">
+                <ul class="mobile-drawer-links">
+                    <li style="--delay: 1"><a href="#home" class="mobile-link active"><span>Home</span> <i class="fa-solid fa-chevron-right mobile-link-arrow"></i></a></li>
+                    <li style="--delay: 2"><a href="#services" class="mobile-link"><span>Services</span> <i class="fa-solid fa-chevron-right mobile-link-arrow"></i></a></li>
+                    <li style="--delay: 3"><a href="#about" class="mobile-link"><span>About Us</span> <i class="fa-solid fa-chevron-right mobile-link-arrow"></i></a></li>
+                    <li style="--delay: 4"><a href="#features" class="mobile-link"><span>Features</span> <i class="fa-solid fa-chevron-right mobile-link-arrow"></i></a></li>
+                    <li style="--delay: 5"><a href="#contact" class="mobile-link"><span>Contact Us</span> <i class="fa-solid fa-chevron-right mobile-link-arrow"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobile-drawer-footer">
+            <a href="#contact" class="btn btn-outline mobile-drawer-cta">
+                <span>Get a Custom Quote</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="mobile-drawer-copyright">© 2026 Elytra Mobility Inc. All rights reserved.</p>
+        </div>
+    </aside>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Powering the Future with <br><span class="accent-text">Smart EV Charging</span> Solutions</h1>
+                <p>Elytra delivers reliable DC fast charging solutions for commercial spaces, highways, parking zones, hospitality locations, and public charging networks.</p>
+                <a href="#services" class="btn btn-primary">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">OUR SERVICES</span>
+                <h2>EV Charging Infrastructure Built for Scale</h2>
+            </div>
+            <div class="grid grid-3">
+                <!-- Card 1: DC Fast Chargers -->
+                <div class="card service-card">
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=800&auto=format&fit=crop" alt="DC Fast Chargers" class="service-card-img" loading="lazy">
+                        <span class="service-badge">30 kW – 120 kW</span>
+                        <div class="service-card-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>DC Fast Chargers</h3>
+                        <p>High-performance DC chargers available in 30 kW, 60 kW, and 120 kW configurations for fast, efficient EV charging across commercial and public environments.</p>
+                        <div class="service-tags">
+                            <span class="service-tag-pill">Dual Gun CCS2</span>
+                            <span class="service-tag-pill">Dynamic Power Sharing</span>
+                            <span class="service-tag-pill">99.5% Uptime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Smart Connectivity & Remote Management -->
+                <div class="card service-card">
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Smart Connectivity & Remote Management" class="service-card-img" loading="lazy">
+                        <span class="service-badge">OCPP 1.6J & 2.0.1</span>
+                        <div class="service-card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Smart Connectivity & Remote Management</h3>
+                        <p>OCPP 1.6J and 2.0.1 compliant systems with Ethernet, Wi-Fi, and 4G connectivity for real-time monitoring, smart operations, and remote charger management.</p>
+                        <div class="service-tags">
+                            <span class="service-tag-pill">4G / Wi-Fi / LAN</span>
+                            <span class="service-tag-pill">Remote OTA Fixes</span>
+                            <span class="service-tag-pill">Automated Billing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: End-to-End Deployment Support -->
+                <div class="card service-card">
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="End-to-End Deployment Support" class="service-card-img" loading="lazy">
+                        <span class="service-badge">Turnkey Rollout</span>
+                        <div class="service-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>End-to-End Deployment Support</h3>
+                        <p>We support installation planning, civil work coordination, electrical accessories, branding, and charging station rollout for businesses and investors.</p>
+                        <div class="service-tags">
+                            <span class="service-tag-pill">Site Survey & Audit</span>
+                            <span class="service-tag-pill">Civil Work & Grid</span>
+                            <span class="service-tag-pill">Branding & Launch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobility Banner -->
+    <section class="mobility-banner">
+        <!-- Geometric Edge Overlays -->
+        <div class="banner-edge-left">
+            <div class="edge-white"></div>
+            <div class="edge-accent"></div>
+        </div>
+        <div class="banner-edge-right">
+            <div class="edge-white"></div>
+            <div class="edge-accent"></div>
+        </div>
+
+        <div class="banner-content container text-center animated zoom-in">
+            <h2>Built for the Next Generation of Mobility</h2>
+            <p>From fast DC chargers to complete deployment solutions, Elytra is enabling businesses to lead the EV revolution.</p>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-content grid grid-2">
+                <!-- Left: Image Area -->
+                <div class="about-image-column animated fade-in-left">
+                    <div class="about-image-wrapper">
+                        <!-- Geometric Shapes -->
+                        <div class="geo-shapes">
+                            <div class="geo-dark"></div>
+                            <div class="geo-accent"></div>
+                        </div>
+                        
+                        <!-- Main Image -->
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="EV Technician" class="main-img">
+                        
+                        <!-- Mission Box -->
+                        <div class="mission-box">
+                            <div class="mission-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <div class="mission-box-text">
+                                <h4>Our Mission</h4>
+                                <p>Powering the future of mobility with reliable, fast, and intelligent EV charging solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text Area -->
+                <div class="about-text-column animated fade-in-right">
+                    <div class="section-tag-wrapper">
+                        <span class="tag-line"></span><span class="section-tag-inline">About Us</span>
+                    </div>
+                    
+                    <h2>Reliable EV Charging Solutions for a Rapidly Growing Market</h2>
+                    
+                    <p class="about-description">Elytra is focused on delivering dependable and scalable EV charging infrastructure for the growing electric mobility ecosystem. Our solutions are designed for public charging, parking spaces, highway locations, hospitality outlets, and smart city deployments. With a strong product foundation and an expanding network, we help businesses and property owners participate in the future of transportation.</p>
+                    
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>DC charging solutions from 30 kW to 120 kW</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>OCPP-enabled smart charger ecosystem</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Indoor and outdoor deployment-ready systems</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="features section">
+        <div class="container text-center">
+            <div class="section-header">
+                <span class="section-tag">OUR FEATURES</span>
+                <h2>Key Features of Elytra Charging Solutions</h2>
+            </div>
+            
+            <div class="features-layout">
+                <!-- Left Column -->
+                <div class="features-column left-column">
+                    <div class="feature-item animated fade-in-left">
+                        <div class="feature-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <div class="feature-details">
+                            <h3>High Performance Charging</h3>
+                            <p>Fast and efficient DC charging from 30kW to 120kW, minimizing downtime for EV drivers.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item animated fade-in-left delay-1">
+                        <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="feature-details">
+                            <h3>Wide EV Compatibility</h3>
+                            <p>Supports standard CCS-2 connectors compatible across virtually all modern electric vehicles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Image -->
+                <div class="features-center animated zoom-in">
+                    <img src="assets/elyta_charger_user_transparent.png" alt="Elytra Charging Station" class="charger-image">
+                </div>
+
+                <!-- Right Column -->
+                <div class="features-column right-column">
+                    <div class="feature-item animated fade-in-right">
+                        <div class="feature-icon"><i class="fa-solid fa-plug-circle-check"></i></div>
+                        <div class="feature-details">
+                            <h3>Seamless Charging Experience</h3>
+                            <p>Plug-and-charge functionality with intuitive smart interface for frictionless user operation.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item animated fade-in-right delay-1">
+                        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="feature-details">
+                            <h3>Smart & User-Friendly System</h3>
+                            <p>Real-time charging data, payment integration, and smart analytics for users and operators.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Adds -->
+    <section class="value-adds section">
+        <div class="container">
+            <div class="grid grid-2 align-items-center">
+                <div class="value-image text-center animated fade-in-left">
+                    <img src="assets/elyta_charger_user_transparent.png" alt="Elytra DC Charger" class="value-charger-img">
+                </div>
+                <div class="value-content animated fade-in-right">
+                    <h2 class="section-title-lg">Comprehensive Support &<br>Monitoring</h2>
+                    
+                    <div class="premium-value-card">
+                        <div class="premium-value-accent"></div>
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="premium-value-text">
+                            <h3>Real-time Revenue Monitoring Platform</h3>
+                            <p>Track. Analyze. Grow.</p>
+                        </div>
+                    </div>
+
+                    <div class="premium-value-card">
+                        <div class="premium-value-accent"></div>
+                        <div class="icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="premium-value-text">
+                            <h3>Customer Service & Support</h3>
+                            <p>Always by your side.</p>
+                        </div>
+                    </div>
+
+                    <div class="premium-value-card">
+                        <div class="premium-value-accent"></div>
+                        <div class="icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="premium-value-text">
+                            <h3>AMC & Warranty</h3>
+                            <p>Peace of mind for 24 months.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AC Chargers -->
+    <section class="ac-chargers section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>AC EV Chargers</h2>
+                <p class="section-subtitle">Reliable. Efficient. Built for Every Journey.</p>
+            </div>
+            
+            <div class="grid grid-3 ac-chargers-grid">
+                <!-- 7.4 kW -->
+                <div class="ac-card animated premium-slide-up delay-1">
+                    <div class="ac-header">
+                        <h3><i class="fa-solid fa-bolt icon-green"></i> 7.4 kW</h3>
+                        <p class="ac-badge-label">AC EV CHARGER</p>
+                    </div>
+                    <div class="ac-body">
+                        <div class="ac-img-wrap">
+                            <img src="assets/ac_charger_7kw.png" alt="7.4 kW AC Charger" class="ac-img">
+                        </div>
+                        <a href="#contact" class="btn btn-outline btn-full">View Details</a>
+                    </div>
+                </div>
+
+                <!-- 11 kW -->
+                <div class="ac-card ac-card-featured animated premium-slide-up delay-2">
+                    <div class="ac-header">
+                        <h3><i class="fa-solid fa-bolt icon-green"></i> 11 kW</h3>
+                        <p class="ac-badge-label">AC EV CHARGER</p>
+                    </div>
+                    <div class="ac-body">
+                        <div class="ac-img-wrap">
+                            <img src="assets/ac_charger_7kw.png" alt="11 kW AC Charger" class="ac-img">
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-full">View Details</a>
+                    </div>
+                </div>
+
+                <!-- 22 kW -->
+                <div class="ac-card animated premium-slide-up delay-3">
+                    <div class="ac-header">
+                        <h3><i class="fa-solid fa-bolt icon-green"></i> 22 kW</h3>
+                        <p class="ac-badge-label">AC EV CHARGER</p>
+                    </div>
+                    <div class="ac-body">
+                        <div class="ac-img-wrap">
+                            <img src="assets/ac_charger_22kw.png" alt="22 kW AC Charger" class="ac-img">
+                        </div>
+                        <a href="#contact" class="btn btn-outline btn-full">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Model -->
+    <section class="revenue-model section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Per Unit Revenue Model <i class="fa-solid fa-bolt icon-teal"></i></h2>
+                <p class="section-subtitle">Simple, transparent earnings for every charging unit.</p>
+            </div>
+
+            <!-- Revenue Steps -->
+            <div class="animated premium-slide-up delay-1 revenue-box">
+                <div class="revenue-ribbon">HOW REVENUE FROM EVERY UNIT IS SHARED</div>
+                
+                <div class="revenue-grid">
+                    <!-- Step 1 -->
+                    <div class="revenue-step-card">
+                        <div class="revenue-step-header">
+                            <span class="step-num">1</span> Charging Price
+                        </div>
+                        <div class="revenue-step-body">
+                            <i class="fa-solid fa-car-side step-icon"></i>
+                            <h3 class="step-amount">₹18</h3>
+                            <p class="step-desc">Total amount paid by EV driver</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="revenue-step-card step-muted">
+                        <div class="revenue-step-header">
+                            <span class="step-num">2</span> Electricity Board
+                        </div>
+                        <div class="revenue-step-body">
+                            <i class="fa-solid fa-tower-cell step-icon"></i>
+                            <h3 class="step-amount">₹10</h3>
+                            <p class="step-desc">Electricity cost to power the charge</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="revenue-step-card step-muted">
+                        <div class="revenue-step-header">
+                            <span class="step-num">3</span> Platform Fee
+                        </div>
+                        <div class="revenue-step-body">
+                            <i class="fa-solid fa-cloud-arrow-up step-icon"></i>
+                            <h3 class="step-amount">₹2</h3>
+                            <p class="step-desc">Platform, operations & support</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="revenue-step-card step-highlight">
+                        <div class="revenue-step-header header-highlight">
+                            <span class="step-num num-highlight">4</span> Investor Profit
+                        </div>
+                        <div class="revenue-step-body">
+                            <i class="fa-solid fa-coins step-icon icon-highlight"></i>
+                            <h3 class="step-amount amount-highlight">₹6</h3>
+                            <p class="step-desc">Your earnings per unit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revenue-banner-footer">
+                    <span>Investor share per unit = ₹6</span>
+                    <span class="divider-bar">|</span>
+                    <span>Per car (30 units) = ₹180</span>
+                </div>
+            </div>
+
+            <!-- Interactive ROI Calculator -->
+            <div class="animated premium-slide-up delay-2 roi-calculator">
+                
+                <div class="roi-header text-center">
+                    <span class="roi-tag">📊 INTERACTIVE ROI CALCULATOR</span>
+                    <h2>Calculate Your Station Monthly Returns</h2>
+                    <p class="section-subtitle">Adjust the sliders to simulate daily EV footfall and estimate your monthly net profits.</p>
+                </div>
+                
+                <div class="grid grid-2 roi-grid">
+                    <!-- Sliders / Inputs -->
+                    <div class="calculator-inputs">
+                        
+                        <div class="input-group">
+                            <label class="slider-label">
+                                <span class="slider-title">Cars Charged Per Day</span>
+                                <div class="slider-badge">
+                                    <span id="sessionsVal">20</span> Cars / day
+                                </div>
+                            </label>
+                            <input type="range" id="sessionsInput" min="1" max="100" value="20" class="roi-slider">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="slider-label">
+                                <span class="slider-title">Average kWh Charged Per Car</span>
+                                <div class="slider-badge">
+                                    <span id="energyVal">20</span> kWh / car
+                                </div>
+                            </label>
+                            <input type="range" id="energyInput" min="5" max="100" value="20" step="5" class="roi-slider">
+                        </div>
+
+                        <div class="input-group">
+                            <label class="slider-label">
+                                <span class="slider-title">Investor Profit Per kWh</span>
+                                <div class="slider-badge">
+                                    ₹<span id="profitMarginVal">9.0</span> / kWh
+                                </div>
+                            </label>
+                            <input type="range" id="profitMarginInput" min="1.0" max="20.0" value="9.0" step="0.5" class="roi-slider">
+                        </div>
+
+                    </div>
+
+                    <!-- Results -->
+                    <div class="calculator-results">
+                        
+                        <div class="result-row">
+                            <span class="result-label">Daily Energy Delivered</span>
+                            <span class="result-val"><span id="dailyEnergyVal">400</span> kWh</span>
+                        </div>
+                        
+                        <div class="result-divider"></div>
+
+                        <div class="result-row">
+                            <span class="result-label">Gross Daily Station Revenue</span>
+                            <span class="result-val">₹<span id="grossRevenueVal">10,000</span></span>
+                        </div>
+
+                        <div class="result-divider"></div>
+
+                        <div class="result-row">
+                            <span class="result-label">Estimated Daily Net Profit</span>
+                            <span class="result-val">₹<span id="dailyProfitVal">3,600</span></span>
+                        </div>
+
+                        <div class="result-box-highlight">
+                            <p class="result-box-subtitle">Estimated Monthly Net Earnings</p>
+                            <div class="result-box-amount">₹<span id="monthlyProfitVal">108,000</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are / Statistics Section -->
+    <section class="who-we-are section bg-light">
+        <div class="container">
+            <div class="who-content grid grid-2">
+                <!-- Left: Text Area -->
+                <div class="who-text-column animated premium-slide-up">
+                    <div class="section-tag-wrapper">
+                        <span class="tag-line"></span><span class="section-tag-inline">Who We Are</span>
+                    </div>
+                    <h2>Smart EV Charging Solutions Built for the Future</h2>
+                    <p class="about-description">Elytra delivers reliable and scalable EV charging infrastructure designed for commercial spaces, highways, and public locations. With advanced DC fast chargers and smart connectivity, we help businesses and investors power the next generation of mobility.</p>
+                    
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>DC Fast Chargers (30kW to 120kW)</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>OCPP Enabled Smart Charging Network</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Real-Time Monitoring & Remote Management</span></li>
+                    </ul>
+                </div>
+
+                <!-- Right: Stats Grid -->
+                <div class="who-stats-column">
+                    <div class="premium-stats-grid">
+                        <div class="stat-card animated premium-pop-up delay-1">
+                            <div class="stat-value"><span class="stat-number" data-target="99">0</span>%</div>
+                            <p>Satisfied Clients</p>
+                        </div>
+                        <div class="stat-card animated premium-pop-up delay-2">
+                            <div class="stat-value"><span class="stat-number" data-target="185">0</span>+</div>
+                            <p>Skilled Professionals</p>
+                        </div>
+                        <div class="stat-card animated premium-pop-up delay-3">
+                            <div class="stat-value"><span class="stat-number" data-target="86">0</span>+</div>
+                            <p>Worldwide Stations</p>
+                        </div>
+                        <div class="stat-card animated premium-pop-up delay-4">
+                            <div class="stat-value"><span class="stat-number" data-target="112">0</span>+</div>
+                            <p>Awards Won</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Slideshow Section -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag-wrapper">
+                    <span class="tag-line"></span><span class="section-tag-inline">Get in Touch</span>
+                </div>
+                <h2>Ready to Electrify Your Business?</h2>
+                <p class="section-subtitle">Contact our experts to discuss your EV charging infrastructure needs.</p>
+            </div>
+
+            <div class="grid grid-2 contact-grid">
+                <!-- Left: Contact Form -->
+                <div class="contact-form-container animated premium-slide-up">
+                    <form id="leadForm">
+                        <div class="grid grid-2 form-row">
+                            <div class="input-group">
+                                <label for="leadName" class="input-label">Full Name</label>
+                                <input id="leadName" name="name" type="text" autocomplete="name" placeholder="John Doe" class="premium-input" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="leadEmail" class="input-label">Email Address</label>
+                                <input id="leadEmail" name="email" type="email" autocomplete="email" placeholder="john@company.com" class="premium-input" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-2 form-row">
+                            <div class="input-group">
+                                <label for="leadPhone" class="input-label">Phone Number</label>
+                                <input id="leadPhone" name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210" class="premium-input">
+                            </div>
+                            <div class="input-group">
+                                <label for="interestSelectTrigger" class="input-label">Interest</label>
+                                <div class="custom-select-wrapper" id="interestSelectWrapper">
+                                    <input type="hidden" name="interest" id="leadInterest" value="Commercial AC Chargers">
+                                    <button type="button" class="custom-select-trigger" id="interestSelectTrigger" aria-haspopup="listbox" aria-expanded="false">
+                                        <span class="custom-select-label" id="interestSelectLabel">Commercial AC Chargers</span>
+                                        <i class="fa-solid fa-chevron-down custom-select-arrow"></i>
+                                    </button>
+                                    <ul class="custom-select-options" id="interestSelectOptions" role="listbox">
+                                        <li class="custom-option selected" data-value="Commercial AC Chargers">
+                                            <i class="fa-solid fa-bolt option-icon"></i>
+                                            <span>Commercial AC Chargers</span>
+                                            <i class="fa-solid fa-check check-icon"></i>
+                                        </li>
+                                        <li class="custom-option" data-value="DC Fast Chargers">
+                                            <i class="fa-solid fa-bolt-lightning option-icon"></i>
+                                            <span>DC Fast Chargers</span>
+                                            <i class="fa-solid fa-check check-icon"></i>
+                                        </li>
+                                        <li class="custom-option" data-value="Fleet Charging Solutions">
+                                            <i class="fa-solid fa-truck-ramp-box option-icon"></i>
+                                            <span>Fleet Charging Solutions</span>
+                                            <i class="fa-solid fa-check check-icon"></i>
+                                        </li>
+                                        <li class="custom-option" data-value="Other Inquiry">
+                                            <i class="fa-solid fa-circle-question option-icon"></i>
+                                            <span>Other Inquiry</span>
+                                            <i class="fa-solid fa-check check-icon"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group form-group-full">
+                            <label for="leadMessage" class="input-label">Message</label>
+                            <textarea id="leadMessage" name="message" rows="4" placeholder="How can we help you?" class="premium-input input-textarea"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Submit Request <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- Right: Charger Slideshow -->
+                <div class="charger-slideshow-container animated premium-slide-up delay-2">
+                    
+                    <!-- Slides -->
+                    <div id="slide-1" class="charger-slide active">
+                        <img src="assets/elyta_charger_user_transparent.png" alt="DC Fast Charger" class="slide-img">
+                        <div class="slide-card">
+                            <h4>120kW DC Fast Charger</h4>
+                            <p>Ultra-fast commercial charging</p>
+                        </div>
+                    </div>
+                    
+                    <div id="slide-2" class="charger-slide">
+                        <img src="assets/ac_charger_22kw.png" alt="22kW AC Charger" class="slide-img">
+                        <div class="slide-card">
+                            <h4>22kW Commercial AC</h4>
+                            <p>Smart destination charging</p>
+                        </div>
+                    </div>
+
+                    <div id="slide-3" class="charger-slide">
+                        <img src="assets/ac_charger_7kw.png" alt="7.4kW AC Charger" class="slide-img">
+                        <div class="slide-card">
+                            <h4>7.4kW / 11kW Wallbox</h4>
+                            <p>Compact power solution</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Dots -->
+                    <div class="slide-dots-wrapper">
+                        <span class="slide-dot active" data-slide="1"></span>
+                        <span class="slide-dot" data-slide="2"></span>
+                        <span class="slide-dot" data-slide="3"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <img src="assets/elytralogo.webp" alt="Elytra Logo" style="height: 40px; width: auto; margin-right: 10px;">
+                    </a>
+                    <p>Powering reliable and scalable EV charging infrastructure for a sustainable tomorrow.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@demoone.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Innovation Drive, Tech City, 10001</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright &copy; 2026 Elytra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
