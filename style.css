@@ -2162,29 +2162,41 @@ body.drawer-open {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.ac-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 163, 161, 0.15);
+    border-color: rgba(0, 163, 161, 0.3);
 }
 
 .ac-header {
-    background: linear-gradient(135deg, var(--col-navy), var(--col-teal));
+    background: linear-gradient(135deg, #0d2451, #00a3a1);
     color: white;
     padding: 1.25rem 1rem;
+    position: relative;
 }
 
 .ac-header h3 {
     font-size: clamp(1.4rem, 4vw, 1.85rem);
-    margin: 0;
+    margin: 0 0 4px 0;
     color: white;
+    font-weight: 700;
 }
 
 .ac-badge-label {
     margin: 0;
-    font-size: 0.8rem;
-    opacity: 0.9;
-    letter-spacing: 1px;
+    font-size: 0.825rem;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .ac-body {
@@ -2201,13 +2213,20 @@ body.drawer-open {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.25rem;
+    padding: 10px;
 }
 
 .ac-img {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 12px 20px rgba(0,0,0,0.12));
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.ac-card:hover .ac-img {
+    transform: scale(1.06);
+    filter: drop-shadow(0 16px 25px rgba(0, 163, 161, 0.22));
 }
 
 .btn-full {
